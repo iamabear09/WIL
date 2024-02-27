@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2fb42b0-86cc-4c7d-b1f4-1b09c85cd2f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/jhp/study/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/jhp/study/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/jhp/study/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/jhp/study/kafka/config/KafkaProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/jhp/study/kafka/config/KafkaTopicConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/jhp/study/kafka/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/jhp/study/service/ConsumerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/jhp/study/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/jhp/study/ProducerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/jhp/study/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/jhp/study/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/jhp/study/kafka/config/KafkaTopicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/jhp/study/kafka/config/KafkaTopicConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +29,12 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/producer">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/consumer">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -51,6 +46,24 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="kafka-spring" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kafka-spring" type="f1a62948:ProjectNode" />
+                <item name="consumer" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kafka-spring" type="f1a62948:ProjectNode" />
+                <item name="consumer" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kafka-spring" type="f1a62948:ProjectNode" />
+                <item name="consumer" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -85,6 +98,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build WIL.executor": "Run",
+    "Gradle.WIL:consumer [bootRun].executor": "Run",
+    "Gradle.WIL:producer [bootRun].executor": "Run",
     "JUnit.Whole project.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -96,7 +111,7 @@
     "git-widget-placeholder": "Kafka__docker-compose",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/whdgn/OneDrive/workspace/WIL",
+    "last_opened_file_path": "C:/Users/whdgn/OneDrive/workspace/WIL/consumer/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,13 +123,61 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\whdgn\OneDrive\workspace\WIL\consumer\src\main\resources" />
       <recent name="C:\Users\whdgn\OneDrive\workspace\WIL\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\whdgn\OneDrive\workspace\WIL\producer" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jhp.study" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Gradle.WIL:consumer [bootRun]">
+    <configuration name="WIL:consumer [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/consumer" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="WIL:producer [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/producer" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -125,9 +188,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="kafka-spring.consumer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="jhp.study.ConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="kafka-spring.producer.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="jhp.study.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="jhp.study.ProducerApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="jhp.study.*" />
@@ -140,7 +210,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Gradle.WIL:consumer [bootRun]" />
+        <item itemvalue="Gradle.WIL:producer [bootRun]" />
+        <item itemvalue="Spring Boot.ProducerApplication" />
         <item itemvalue="JUnit.Whole project" />
       </list>
     </recent_temporary>
@@ -164,7 +236,7 @@
       <workItem from="1708940169623" duration="149000" />
       <workItem from="1708940356412" duration="566000" />
       <workItem from="1708940947182" duration="284000" />
-      <workItem from="1708951938536" duration="2554000" />
+      <workItem from="1708951938536" duration="5500000" />
     </task>
     <servers />
   </component>

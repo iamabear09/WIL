@@ -1,6 +1,5 @@
 package jhp.study.controller;
 
-import io.azam.ulidj.ULID;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -17,10 +16,7 @@ public class MessageController {
 
     @GetMapping("/send")
     public String sendMessage(@RequestParam String message) {
-        kafkaTemplate.send("spring-topic","tempKey", message);
-        String ulid = ULID.random();
-        log.info("ULID = {}", ulid);
-
-        return ulid;
+        kafkaTemplate.send("test-topic","tempKey", message);
+        return message;
     }
 }

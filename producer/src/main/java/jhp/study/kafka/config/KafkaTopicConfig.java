@@ -26,7 +26,7 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic topic1() {
-        return TopicBuilder.name("spring-topic")
+        return TopicBuilder.name("test-topic")
                 .partitions(1)
                 .replicas(1)
                 .compact()
